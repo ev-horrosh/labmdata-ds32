@@ -1,4 +1,7 @@
 {
     "python.formatting.provider": "black",
-    "typewriterScrollMode.enable": true
+    "typewriterScrollMode.enable": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true
 }
