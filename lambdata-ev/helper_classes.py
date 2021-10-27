@@ -3,17 +3,17 @@ import numpy as np
 
 
 class Helper:
-    """
-    Splits datatime into month, day, year.
-    Takes a datetime series column,
-    splits it and gets rid of original column
-    """
+   
 
     def __init__(self, df):
         self.df = df
 
     def split_dates(df):
-
+        """
+        Splits datatime into month, day, year.
+        Takes a datetime series column,
+        splits it and gets rid of original column
+        """
         df = pd.DataFrame(df)
         df[0] = pd.to_datetime(df[0])
         for d in df:
@@ -45,4 +45,4 @@ if __name__ == "__main__":
 
     # df = Helper.null_count(pd.Series(["1/12/2006", "2/10/2017", np.nan]))
     # help(Helper.null_count)
-    print(df)
+    # print(df)
