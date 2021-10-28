@@ -1,2 +1,6 @@
 .vscode/
 test.ipynb
+lambdata\.pytest_cache
+lambdata\__pycache__
+.pytest_cache
+__pycache__
