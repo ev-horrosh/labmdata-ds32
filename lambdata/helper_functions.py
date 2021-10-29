@@ -22,7 +22,7 @@ def split_dates(df):
 
 def list_2_series(list_2_series):
     series = pd.Series(list_2_series)
-    df = pd.DataFrame(series, columns=["your list"])
+    df = pd.DataFrame(series, columns=["my_list"])
     return df
 
 # df = list_2_series(['test',2345,5,'f',0,np.nan])

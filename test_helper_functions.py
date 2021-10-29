@@ -1,6 +1,7 @@
-"""Testinf helper functions"""
+"""Testing helper functions"""
 from lambdata import helper_functions as hf
 import pandas as pd
+import numpy as np
 
 
 def test_hf_type():
@@ -14,10 +15,9 @@ def test_hf_same_output():
         pd.DataFrame({"month": 1, "day": 12, "year": 2006}, index=[0])
     )
 
-def list_2_series(list_2_series):
-    series = pd.Series(list_2_series)
-    df = pd.DataFrame(series, columns=["your list"])
-    return df
 
-# df = list_2_series(['test',2345,5,'f',0,np.nan])
-# print(df)
+def test_list_2_series_hf_is_list():
+    """Testing if arg is a list"""
+    assert isinstance(
+        hf.list_2_series(["test", 2345, 5, "f", 0, np.nan]).values.tolist(), list
+    )
